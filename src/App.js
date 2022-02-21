@@ -1,23 +1,24 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import Ama from "./Components/Ama";
+import BuySubscription from "./Components/BuySubscription";
+import BookTicket from "./Components/BookTicket";
+import Shopping from "./Components/Shopping";
+import Home from "./Components/Home";
+
+import { Routes, Route } from "react-router-dom";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <div className="wrapper">
+        <Routes>
+          <Route path={"/"} element={<Home />} />
+          <Route path={"/ama"} element={<Ama />} />
+          <Route path={"/shopping"} element={<Shopping />} />
+          <Route path={"/book-ticket"} element={<BookTicket />} />
+          <Route path={"/buy-subscription"} element={<BuySubscription />} />
+        </Routes>
+      </div>
     </div>
   );
 }
