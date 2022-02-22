@@ -5,6 +5,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    background: linear-gradient(165.93deg, #503977 0.47%, #000000 100%);
 }
 
 .title {
@@ -14,6 +15,6 @@
 
 
 .illus {
-    width: 80%;
+    width: 85%;
     height: auto;
 }
