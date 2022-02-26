@@ -2,9 +2,8 @@ import "./BuySubscription.css";
 
 export const BuySubscription = () => {
   return (
-    <div className="container">
-      <h1 className="title">Buy Subscription</h1>
-      <img className="illus" src="/subscription.gif" alt="" />
+    <div className="buy-wrapper">
+      <img className="illus" src="/subscription.png" alt="" />
     </div>
   );
 };
