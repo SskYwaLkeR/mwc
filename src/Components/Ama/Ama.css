@@ -1,14 +1,24 @@
-.container {
+.ama-container {
     width: 100%;
     height: 100%;
-
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: linear-gradient(165.93deg, #503977 0.47%, #000000 100%);
 
 }
 
-.title {
-    text-align: center;
-    margin-bottom: 30px;
+
+.ama-wrapper {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
+
+
 
 
 .illus {
