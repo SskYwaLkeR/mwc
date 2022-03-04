@@ -19,6 +19,12 @@ export const Home = () => {
         <li>
           <Link to="/book-ticket">Book Ticket</Link>
         </li>
+        <li>
+          <Link to="/chat">Chat</Link>
+        </li>
+        <li>
+          <Link to="/recipe">Recipe</Link>
+        </li>
       </ul>
     </div>
   );
