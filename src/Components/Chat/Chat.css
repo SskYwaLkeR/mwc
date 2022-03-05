@@ -106,6 +106,8 @@
     color: #FFFFFF;
     font-size: 12px;
     line-height: 21px;
+    outline: none;
+    resize: none;
 }
 .input::placeholder {
     color: #FFFFFF;
