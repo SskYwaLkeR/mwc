@@ -1,7 +1,8 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import "./Chat.css";
 
 export const Chat = () => {
+  let inputRef = null;
   const [messages, setMessages] = useState([]);
   const [input, setInput] = useState("");
 
@@ -10,9 +11,15 @@ export const Chat = () => {
   };
 
   const handleSend = () => {
-    setMessages([...messages, input]);
-    setInput("");
+    if (messages.length > 0) {
+      setMessages([...messages, input]);
+      setInput("");
+    }
   };
+
+  useEffect(() => {
+    inputRef?.focus();
+  }, []);
 
   return (
     <div className={"chat-container"}>
@@ -34,6 +41,10 @@ export const Chat = () => {
             placeholder={"Write your comment..."}
             value={input}
             onChange={(e) => handleInputChange(e)}
+            ref={(input) => {
+              inputRef = input;
+            }}
+            autoFocus
           ></textarea>
           <div
             style={{ backgroundImage: `url('/send.svg')` }}
