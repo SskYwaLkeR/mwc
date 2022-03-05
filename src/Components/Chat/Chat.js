@@ -19,10 +19,11 @@ export const Chat = () => {
 
   useEffect(() => {
     inputRef?.focus();
-  }, [inputRef]);
+  }, [inputRef, messages]);
 
   return (
     <div className={"chat-container"}>
+      <img src="/glance-logo.png" className={"gl-logo"} alt="" />
       <img className={"chat-bubble"} src="/chat-bubble.png" alt="" />
       <div className={"msg-container"}>
         {messages.map((msg) => (
