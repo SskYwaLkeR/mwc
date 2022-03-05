@@ -11,7 +11,7 @@ export const Chat = () => {
   };
 
   const handleSend = () => {
-    if (messages.length > 0) {
+    if (input.length > 0) {
       setMessages([...messages, input]);
       setInput("");
     }
