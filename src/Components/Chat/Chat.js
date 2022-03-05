@@ -19,7 +19,7 @@ export const Chat = () => {
 
   useEffect(() => {
     inputRef?.focus();
-  }, []);
+  }, [inputRef]);
 
   return (
     <div className={"chat-container"}>
