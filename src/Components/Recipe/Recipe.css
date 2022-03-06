@@ -1,18 +1,22 @@
 .recipe-container {
     width: 100%;
     height: 100%;
+    position: relative;
 }
 
 .ingredients {
     width: 100%;
-    height: 85%;
     background-repeat: no-repeat;
+    background-position: center;
     background-size: cover;
+    padding-bottom: 78px;
 }
 
 .action {
     width: 100%;
     padding: 0 16px;
+    position: fixed;
+    top: calc(100% - 65px);
 }
 
 .download {
