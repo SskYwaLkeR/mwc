@@ -9,7 +9,7 @@
     align-items: center;
     justify-content: space-between;
     padding-top: 16px;
-    padding-bottom: 60px;
+    padding-bottom: 65px;
 }
 
 .chat-glance-logo {
@@ -28,4 +28,5 @@
 .chat-button {
     width: 136px;
     height: 91px;
+    background-size: contain;
 }
