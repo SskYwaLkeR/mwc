@@ -6,8 +6,9 @@ import Shopping from "./Components/Shopping";
 import Home from "./Components/Home";
 
 import { Routes, Route } from "react-router-dom";
-import Chat from "./Components/Chat";
 import Recipe from "./Components/Recipe";
+import ChatHome from "./Components/ChatHome";
+import Chat from "./Components/Chat";
 
 function App() {
   return (
@@ -19,8 +20,9 @@ function App() {
           <Route path={"/shopping"} element={<Shopping />} />
           <Route path={"/book-ticket"} element={<BookTicket />} />
           <Route path={"/buy-subscription"} element={<BuySubscription />} />
-          <Route path={"/chat"} element={<Chat />} />
+          <Route path={"/chat"} element={<ChatHome />} />
           <Route path={"/recipe"} element={<Recipe />} />
+          <Route path={"/chat-room"} element={<Chat />} />
         </Routes>
       </div>
     </div>
